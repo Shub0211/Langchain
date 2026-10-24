@@ -1,0 +1,86 @@
+from langchain_openai import ChatOpenAI
+from dotenv import load_dotenv
+from langchain_core.prompts import PromptTemplate
+from langchain_core.output_parsers import StrOutputParser
+
+load_dotenv()
+
+prompt = PromptTemplate(
+    templates = 'Generate 5 interetsting facts about {topic}',
+    input_variables = ['topic']
+)
+
+model = ChatOpenAI()
+
+parser = StrOutputParser()
+
+chain = prompt | model | parser
+
+result = chain.invoke({'topic': 'space exploration'})
+
+print(result)
+
+chain.get_graph().print_ascii() # to check our chain structure
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
