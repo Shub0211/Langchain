@@ -15,7 +15,7 @@ from langchain_community.document_loaders import CSVLoader
 folder = Path(__file__).resolve().parent
 
 # Build the CSV file path
-file_path = folder / "BankwiseMessageId_File_Data.csv"
+file_path = folder / "abc.csv"
 
 print("CSV path:", file_path)
 print("File exists:", file_path.exists())

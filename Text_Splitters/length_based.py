@@ -7,7 +7,7 @@ from pathlib import Path
 # text = """ """
 
 # Get the folder where text_loader.py is located
-file_path = Path(__file__).parent / "Shivani Chauhan_resume.pdf"
+file_path = Path(__file__).parent / "abc.pdf"
 
 loader = PyPDFLoader(str(file_path))
 

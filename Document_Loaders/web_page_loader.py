@@ -18,7 +18,7 @@ prompt = PromptTemplate(
 parser = StrOutputParser()
 
 
-url='https://www.amazon.in/dp/B0H297XH3K?aref=o8JYplTuf1&pd_rd_plhdr=t&pf_rd_r=XJVAJMVF9N7Q1RBNF42P'
+url=''
 
 loader = WebBaseLoader(url)
 
